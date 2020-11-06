@@ -19,7 +19,7 @@ void ArrayRotate (int A[], int n, int k)
   temp=A[i];
   while(1)
   {
-   d=(j+k)%n;
+   d=(j+k)%n; //j+k)%n makes sure that if j+k vaulue is less than n then it is returned itself whereas if it's greater than n then the remainder will be returned and since j is index it will never get baove n in any case.
    if(d==i){
     break;
    }else{
